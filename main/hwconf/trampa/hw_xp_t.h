@@ -27,8 +27,8 @@
 #define HW_INIT_HOOK()				hw_init()
 
 // LEDs
-#define LED_RED_PIN					2
-#define LED_BLUE_PIN				3
+#define LED_RED_PIN					4		//XIAO pin 2
+#define LED_BLUE_PIN				5		//XIAO pin 3
 
 #define LED_RED_ON()				gpio_set_level(LED_RED_PIN, 1)
 #define LED_RED_OFF()				gpio_set_level(LED_RED_PIN, 0)
@@ -37,20 +37,20 @@
 #define LED_BLUE_OFF()				gpio_set_level(LED_BLUE_PIN, 0)
 
 // CAN
-#define CAN_TX_GPIO_NUM				1
-#define CAN_RX_GPIO_NUM				0
+#define CAN_TX_GPIO_NUM				2		//XIAO pin 0
+#define CAN_RX_GPIO_NUM				3		//XIAO PIN 1
 
 // SD-card
-#define SD_PIN_MOSI					4
-#define SD_PIN_MISO					6
-#define SD_PIN_SCK					5
-#define SD_PIN_CS					7
+#define SD_PIN_MOSI					10		//XIAO pin 10
+#define SD_PIN_MISO					9		//XIAO pin 9
+#define SD_PIN_SCK					8		//XIAO pin 8
+#define SD_PIN_CS					7		//XIAO pin 5
 
 // UART
 #define UART_NUM					0
 #define UART_BAUDRATE				115200
-#define UART_TX						21
-#define UART_RX						20
+#define UART_TX						21		//XIAO pin 6
+#define UART_RX						20		//XIAO pin 7
 
 // Functions
 void hw_init(void);
